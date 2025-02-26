@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const var1 ="constante"
+        let var2 = "pas constante"
+        let number = 1234
+        
+        let var3 = null;
+        let var4;
+
+        for (let i = 0; i < 10; i++) { // affiche chaque valeur de i inferieur a 10:
+            console.log(i)
+        }
+        for (let i = 0; i < var2.length; i++){ // tant que i est inferieur a la taille de var2, cela
+            console.log(var2[i])
+        }
+        const tableau = [  // definition d'un tableau
+            "hello",
+            1234,
+            "world",
+            undefined,
+        ]
+
+        for ( i = 0; i< tableau.length; i++){
+            console.log(tableau[i])        // affiche chaque element d'un tableau
+            console.log(typeof tableau[i]) // affiche le type de chaque element d'un tableau
+        }
+
+        for ( i = 0; i < tableau.length; i++){
+            if (typeof tableau[i] == "string") {
+                console.log(tableau[i])
+                console.log(typeof tableau[i])
+            }
+        }
+
+        const obj1 = []
+        const obj2 = {
+            inst1 : 'string',
+            inst2 : 123,
+            inst3 : ["hello", "wolrd"],
+            inst4 : {
+                name: "baba",
+                url: "8",
+            },
+            inst5: function() { console.log ("MI : i am a function")},
+            inst6: {
+                inst:123,
+                inst:"",
+                inst3: function() {},
+                inst4: [ "", 1, null, var1 ]
+            }
+
+        }
+        function sum(x,y){
+            return x + y
+        }
+
+        function sub(x,y){
+            return x - y
+        }
+        function div(x,y){
+            return x / y
+        }
+        function mul(x,y){
+            return x * y
+        }
+
+        // == compare la meme valeur mais pas le meme type ou le meme type mais as la meme valeur
+        // === compare la meme valeur et le meme type 
+    </script>
+</body>
+</html>
